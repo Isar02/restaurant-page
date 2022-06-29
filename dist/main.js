@@ -9,6 +9,17 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"renderContactPage\": () => (/* binding */ renderContactPage)\n/* harmony export */ });\nconst renderContactPage = (() => {\n    const contentContainer = document.querySelector('#content');\n    const contact = document.createElement('div');\n    contact.setAttribute('id', 'contact');\n    contact.setAttribute('data-tab-content', '');\n    contact.innerHTML = `\n    <div class='hero'>\n    <h1>Contact us</h1>\n    </div>\n    <div class='contact-container'>\n    <div class='info'>\n    <div class='address'>\n    <p>\n    <i class='fi-xnsuxl-map-marker-solid'></i>641 N Highland Ave<br />Los Angeles, CA 90036\n    </p>\n    </div>\n    <div class='hours'>\n    <p>\n    <i class='fi-cnsuhl-clock-solid'></i>\n    <span>Mon-Thurs:</span>8am-02am<br /><span>Fri-Sun:</span>8am-04am\n    </p>\n    </div>\n    <div class='phone'>\n    <p><i class='fi-xnsrxl-phone-solid'></i>(111)-222 3333</p>\n    </div>\n    <div class='contact-form'>\n    <form onsubmit='return false'>\n    <h3><i class='fi-xwsuxl-envelope-solid'></i>Message us</h3>\n    <div class='input-box'>\n    <input type='text' required />\n    <span>Full Name</span>\n    </div>\n    <div class='input-box'>\n    <input type='text' required />\n    <span>Email</span>\n    </div>\n    <div class='input-box'>\n    <textarea required></textarea>\n    <span>Type your message...</span>\n    </div>\n    <input type='submit' value='Send' />\n    </form>\n    </div>\n    </div>\n    <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.4692730069946!2d-118.3410552843425!3d34.08311688059759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b8d3a0ee6b6d%3A0x7fd7c9cbe4f265c7!2sPizzeria%20Mozza!5e0!3m2!1sen!2sba!4v1656503777890!5m2!1sen!2sba\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>\n    </div>`;\n\n    contentContainer.appendChild(contact);\n})();\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/contact.js?");
+
+/***/ }),
+
 /***/ "./src/home.js":
 /*!*********************!*\
   !*** ./src/home.js ***!
@@ -27,7 +38,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageload__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageload */ \"./src/pageload.js\");\n/* harmony import */ var _pageload__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_pageload__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageload__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageload */ \"./src/pageload.js\");\n/* harmony import */ var _pageload__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_pageload__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact */ \"./src/contact.js\");\n\n\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 
