@@ -71,11 +71,29 @@ h2 {
 }
 
 li {
-    font-family: var(--poppins);
-    list-style: none;
-    font-weight: bold;
-    transition: 0.3s ease;
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
     cursor: pointer;
+    font-family: var(--poppins);
+}
+
+li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .red {
@@ -211,7 +229,7 @@ li:hover {
 }
 
 #menu .hero h1 {
-    font-family: var(--sansita);
+    font-family: var(--poppins);
     font-size: calc(3rem + 1vw);
     color: var(--white);
     position: relative;
@@ -287,8 +305,8 @@ li:hover {
 
 #contact h1 {
     font-size: calc(3rem + 1vw);
-    font-family: var(--sansita);
-    color: rgb(36, 36, 36);
+    font-family: var(--poppins);
+    color: var(--white);
     position: relative;
 }
 
@@ -303,6 +321,7 @@ li:hover {
 }
 
 #contact .info p {
+    color: var(--white);
     font-family: var(--poppins);
     text-align: justify;
     font-size: 1.5rem;
@@ -312,12 +331,12 @@ li:hover {
 #contact .info i {
     font-size: 1.5rem;
     padding-right: 1rem;
-    color: var(--white);
+    color: var(--dark-blue);
 }
 
 #contact .contact-container {
     margin-top: 2rem;
-    background: rgba(255, 68, 68, 0.28);
+    background: rgba(0, 0, 0, 0.6);
     width: 60%;
     border-radius: 1.2rem;
     padding: calc(2rem + 2vw);
@@ -360,7 +379,7 @@ li:hover {
     font-size: 1.6rem;
     pointer-events: none;
     transition: 0.3s;
-    color: #666;
+    color: var(--white);
     font-family: var(--poppins);
 }
 
@@ -376,12 +395,13 @@ li:hover {
 #contact .contact-container textarea,
 #contact .contact-container input[type="text"] {
     font-family: var(--poppins);
+    color: var(--white);
 }
 
 #contact .contact-container input[type="submit"] {
     width: 10rem;
     font-size: 1.6rem;
-    background: var(--white);
+    background: var(--dark-blue);
     padding: 8px 22px;
     color: var(--white);
     border: none;
@@ -389,10 +409,6 @@ li:hover {
     border-radius: 4px;
     cursor: pointer;
     transition: 0.5s;
-}
-
-#contact .contact-container input[type="submit"]:hover {
-    background: #ce103f;
 }
 
 @media screen and (max-width: 768px) {
